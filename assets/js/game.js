@@ -18,11 +18,11 @@ $(document).ready(function() {
         userAnswer = $(this).text();
         //conditional, if/else 
         userAnswer === correctAnswers[numQuestion] ?(
-            //alert("HEY NOW YOUR A ROCKSTAR,GET YOUR GAME ON !!**CORRECT**");
+            //alert(**CORRECT**);
             clearInterval(gameTime),
             addWin()) :
             //else
-            (//alert("wrong answer!");
+            (//alert(wrong);
             clearInterval(gameTime),
             minusLoss()
         )
@@ -41,14 +41,14 @@ $(document).ready(function() {
 
 function timeOver() {
     numSkip++;
-    gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>You ran out of time!  The correct answer was: " + correctAnswers[numQuestion] + "</p>" + "<img class='center-block img-wrong' src='/assets/images/x.gif'>";
+    gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>You ran out of time!  The correct answer was: " + correctAnswers[numQuestion] + "</p>";
     $("#textArea").html(gameHTML);
     setTimeout(wait, 2500);  
 }
 
 function addWin() {
     numCorrect++;
-    gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>HEY NOW YOUR ARE A ROCKSTAR!!CORRECT!! The answer is: " + correctAnswers[numQuestion] + "</p>" + imageArray[numQuestion];
+    gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>HEY NOW YOUR ARE A ROCKSTAR!!CORRECT!! The answer is: " + correctAnswers[numQuestion] + "</p>";
     $("#textArea").html(gameHTML);
     
     setTimeout(wait, 2500); 
@@ -56,7 +56,7 @@ function addWin() {
 
 function minusLoss() {
     numWrong++;
-    gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>DOHHHH,Incorrect!! The correct answer is: "+ correctAnswers[numQuestion] + "</p>" + "<img class='center-block img-wrong' src='/assets/images/x.gif'>";
+    gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>DOHHHH,Incorrect!! The correct answer is: "+ correctAnswers[numQuestion] + "</p>";
     $("#textArea").html(gameHTML);
     setTimeout(wait, 2500); 
 }
@@ -126,15 +126,7 @@ var choicesArray = [
     ["Stevens","Lawrence", "Matthews", "Smith"], 
     ["Golden Gate Bridge","London Bridge","Brooklyn Bridge","Famous Bridge"], ];
 
-var imageArray = new Array(); //creates a new array to  assign values(images).
-imageArray[0] = "<img class='center-block' src='/assets/images/.jpg'>";
-imageArray[1] = "<img class='center-block' src='/assets/images/.jpeg'>"; 
-imageArray[2] = "<img class='center-block' src='/assets/images/.jpg'>"; 
-imageArray[3] = "<img class='center-block' src='/assets/images/.jpeg'>";  
-imageArray[4] = "<img class='center-block' src='/assets/images/.gif'>"; 
-imageArray[5] = "<img class='center-block' src='/assets/images/.jpg'>"; 
-imageArray[6] = "<img class='center-block' src='/assets/images/.jpeg'>"; 
-imageArray[7] = "<img class='center-block' src='/assets/images/.jpg'>"; 
+
 
 var correctAnswers = 
 [ "C. Friends", 
