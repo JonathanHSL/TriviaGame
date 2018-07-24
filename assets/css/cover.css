@@ -6,8 +6,8 @@ a{
 
 body{
     
-    background-image: url("assets/image/bg.jpg");
-    background: url('assets/image/bg.jpg');
+    background-image: url("image/bg.jpg");
+    background: url('image/bg.jpg');
     background-size: 60%;   
     background-repeat: no-repeat;
     background-color: black;

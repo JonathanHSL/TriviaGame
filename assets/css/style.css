@@ -1,8 +1,8 @@
 body{
-    background-image: url("assets/image/diner.jpg");
-    background: url('assets/image/diner.jpg');
+    
     background-size: cover;
-    background-color:white;
+    background-image: url("image/diner.jpg");
+    background: url('image/diner.jpg');
 }
 
 h1{
@@ -29,7 +29,7 @@ h1{
   } 
   
   span{
-    animation: blink 1s infinite;
+    animation: blink ;
   }
   
   @keyframes type{ 

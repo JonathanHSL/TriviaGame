@@ -127,14 +127,14 @@ var choicesArray = [
     ["Golden Gate Bridge","London Bridge","Brooklyn Bridge","Famous Bridge"], ];
 
 var imageArray = new Array(); //creates a new array to  assign values(images).
-imageArray[0] = "<img class='center-block' src='/assets/images/budweiser.jpg'>";
-imageArray[1] = "<img class='center-block' src='/assets/images/heineken.jpeg'>"; 
-imageArray[2] = "<img class='center-block' src='/assets/images/milwaukee.jpg'>"; 
-imageArray[3] = "<img class='center-block' src='/assets/images/heineken.jpeg'>";  
-imageArray[4] = "<img class='center-block' src='/assets/images/pbr.gif'>"; 
-imageArray[5] = "<img class='center-block' src='/assets/images/carlsburg.jpg'>"; 
-imageArray[6] = "<img class='center-block' src='/assets/images/trappist.jpeg'>"; 
-imageArray[7] = "<img class='center-block' src='/assets/images/miller.jpg'>"; 
+imageArray[0] = "<img class='center-block' src='/assets/images/.jpg'>";
+imageArray[1] = "<img class='center-block' src='/assets/images/.jpeg'>"; 
+imageArray[2] = "<img class='center-block' src='/assets/images/.jpg'>"; 
+imageArray[3] = "<img class='center-block' src='/assets/images/.jpeg'>";  
+imageArray[4] = "<img class='center-block' src='/assets/images/.gif'>"; 
+imageArray[5] = "<img class='center-block' src='/assets/images/.jpg'>"; 
+imageArray[6] = "<img class='center-block' src='/assets/images/.jpeg'>"; 
+imageArray[7] = "<img class='center-block' src='/assets/images/.jpg'>"; 
 
 var correctAnswers = 
 [ "C. Friends", 
