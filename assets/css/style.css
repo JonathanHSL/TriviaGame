@@ -1,0 +1,53 @@
+body{
+    background-image: url("assets/image/diner.jpg");
+    background: url('assets/image/diner.jpg');
+    background-size: cover;
+    background-color:white;
+}
+
+h1{
+    color: black; 
+    font-family: 'Monoton', cursive;
+    font-size: 35px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 4s steps(60, end); 
+    background-color: white;
+  }
+
+  #textArea{
+    background-color:white;
+  }
+  
+  h1:nth-child(3){
+    animation: type2 8s steps(60, end);
+  }
+  h1:nth-child(4){
+    animation: type2 8s steps(60, end);
+  } 
+  
+  span{
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+  @keyframes type2{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; } 
+  } 
+  
+  @keyframes blink{
+    to{opacity: .0;}
+  }
+
+
+
+  
+
+  
